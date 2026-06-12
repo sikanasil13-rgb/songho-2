@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io(https://songho-2-7gs0.onrender.com/);
 let monRole = null; // Va stocker si on est Joueur 1 ou Joueur 2
 
 // Écouter le serveur pour savoir quel rôle on a reçu
