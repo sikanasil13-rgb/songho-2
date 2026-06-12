@@ -1,0 +1,84 @@
+/* Styles généraux pour centrer le jeu sur la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4efe6; /* Couleur de fond douce, style argile/sable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #4a2c11; /* Brun foncé */
+}
+
+/* Zone d'informations (Scores et Tour) */
+#info-jeu {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #5c3a21;
+}
+
+#message-tour {
+    background-color: #4a2c11;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+/* Le plateau de jeu principal (le bloc de bois) */
+#plateau {
+    background-color: #8b5a2b; /* Couleur bois */
+    border: 8px solid #5c3a21; /* Bordure en bois plus foncé */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Ombre pour donner du relief */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espace entre la rangée du haut et celle du bas */
+}
+
+/* Une rangée de 6 cases */
+.rangee {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Espace entre chaque case */
+}
+
+/* Style individuel de chaque case (les trous) */
+.case {
+    width: 80px;
+    height: 80px;
+    background-color: #5c3a21; /* Fond creux plus foncé */
+    border-radius: 50%; /* Rend la case parfaitement circulaire */
+    border: 3px solid #4a2c11;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5); /* Ombre interne pour l'effet "creusé" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer; /* Le curseur devient une main au survol */
+    transition: background-color 0.2s; /* Animation fluide lors du survol */
+}
+
+/* Effet au survol des cases pour montrer qu'elles sont cliquables */
+.case:hover {
+    background-color: #724729;
+}
+/* --- LE STYLE DES GRAINES --- */
+.graine {
+    display: inline-block;
+    width: 14px;                 /* Largeur de la graine */
+    height: 14px;                /* Hauteur de la graine */
+    background-color: #8B4513;   /* Couleur marron pour la graine */
+    border-radius: 50%;          /* Rend la graine parfaitement ronde */
+    margin: 4px;                 /* Crée un petit espace entre les graines */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Ajoute une petite ombre réaliste */
+}

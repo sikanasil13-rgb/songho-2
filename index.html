@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Songho / Awélé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Jeu de Songho (Awélé)</h1>
+
+    <div id="info-jeu">
+        <div class="score-joueur">Joueur 2 (Top) : <span id="score-j2">0</span> graines</div>
+        <div id="message-tour">Au tour du Joueur 1</div>
+        <div class="score-joueur">Joueur 1 (Bottom) : <span id="score-j1">0</span> graines</div>
+    </div>
+
+    <div id="plateau">
+        
+        <div class="rangee" id="rangee-j2">
+            <div class="case" id="case-11" data-index="11"></div>
+            <div class="case" id="case-10" data-index="10"></div>
+            <div class="case" id="case-9" data-index="9"></div>
+            <div class="case" id="case-8" data-index="8"></div>
+            <div class="case" id="case-7" data-index="7"></div>
+            <div class="case" id="case-6" data-index="6"></div>
+        </div>
+
+        <div class="rangee" id="rangee-j1">
+            <div class="case" id="case-0" data-index="0"></div>
+            <div class="case" id="case-1" data-index="1"></div>
+            <div class="case" id="case-2" data-index="2"></div>
+            <div class="case" id="case-3" data-index="3"></div>
+            <div class="case" id="case-4" data-index="4"></div>
+            <div class="case" id="case-5" data-index="5"></div>
+        </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
